@@ -105,7 +105,7 @@
   </svg>
   <div>
     <h1>Политика конфиденциальности Verbalingo</h1>
-    <p class="date">Действует с 19 августа 2026 года</p>
+    <p class="date">Действует с 20 августа 2026 года</p>
     <p class="date">Приложение раньше называлось Verba. Изменилось только имя:
     что программа делает с данными, осталось прежним.</p>
   </div>
@@ -114,12 +114,16 @@
 <p class="switch"><a href="#english">Read this page in English ↓</a></p>
 
 <div class="lede">
-  <p><strong>Verbalingo не собирает никаких данных.</strong> Приложение не подключается
-  к интернету и не передаёт ничего никуда — ни разработчику, ни третьим лицам.
-  Всё, что вы в нём делаете, остаётся на вашем устройстве.</p>
-  <p>Это не обещание, а свойство сборки: у приложения нет разрешения
-  <code>INTERNET</code>. Без него операционная система не даст ему открыть ни
-  одного сетевого соединения, даже если бы код это попытался сделать.</p>
+  <p><strong>Без аккаунта Verbalingo не собирает никаких данных.</strong>
+  Приложение работает целиком на вашем устройстве, и заниматься можно, ничего
+  никуда не отправляя. Регистрация не требуется и ничего не открывает в
+  занятиях: она нужна ровно для одного — чтобы продолжить те же повторения на
+  другом устройстве.</p>
+  <p><strong>Если вы вошли в аккаунт</strong>, приложение начинает пересылать
+  ваш учебный прогресс между вашими устройствами через сервер. Что именно
+  уезжает, кто его хранит и как всё это удалить — ниже, и это единственное
+  назначение сети в приложении. Ни рекламы, ни аналитики, ни продажи данных
+  нет ни в каком режиме.</p>
 </div>
 
 <h2>Что хранится на устройстве</h2>
@@ -135,9 +139,57 @@
   <li>настройки: тема, длина занятия, час напоминания.</li>
 </ul>
 
-<p>Эти данные не покидают устройство. Они удаляются вместе с приложением при
-его удалении, а также при очистке данных приложения в системных настройках
-Android.</p>
+<p>Пока вы не вошли в аккаунт, эти данные не покидают устройство. Они удаляются
+вместе с приложением при его удалении, а также при очистке данных приложения в
+системных настройках Android.</p>
+
+<h2>Аккаунт и синхронизация</h2>
+
+<p>Вход нужен затем, чтобы одни и те же слова и одно и то же расписание
+повторений были и на телефоне, и в браузере на компьютере. Без входа
+приложение полное: ни один экран, ни одна ступень и ни одна настройка не
+требуют регистрации.</p>
+
+<h3>Что собирается</h3>
+
+<ul>
+  <li><strong>Адрес электронной почты.</strong> Он и есть учётная запись:
+      пароля нет, вместо него на почту приходит шестизначный код. Адрес
+      используется только чтобы прислать код и опознать вас при следующем
+      входе. Рассылок на него не будет.</li>
+  <li><strong>Учебные данные</strong> — то же, что перечислено выше: состояние
+      карточек, журнал повторений, отмеченные как знакомые слова, сообщения об
+      ошибках в карточках, результат диагностики и настройки. Копия этого
+      попадает на сервер, чтобы её мог забрать ваш второй вход.</li>
+</ul>
+
+<p>Ничего сверх этого не собирается: ни имени, ни телефона, ни адресной книги,
+ни местоположения, ни идентификаторов для рекламы.</p>
+
+<h3>Где это хранится</h3>
+
+<p>На <a href="https://supabase.com/privacy" rel="noopener">Supabase</a> —
+это хостинг баз данных, выступающий обработчиком данных по нашему поручению.
+Регион хранения — {{РЕГИОН}}. Соединение шифруется (HTTPS), а доступ к записи
+ограничен на уровне строк базы: прочитать её может только тот аккаунт, которому
+она принадлежит. Письма с кодом отправляются через почтового провайдера,
+которому передаётся только адрес и сам код.</p>
+
+<p>Данные хранятся, пока существует аккаунт. Мы не продаём их, не передаём
+рекламодателям и не используем для обучения моделей.</p>
+
+<h3>Как удалить</h3>
+
+<p>В приложении: «Настройки» → «Аккаунт» → «Удалить аккаунт». Учётная запись и
+всё, что хранится на сервере, удаляются без возможности восстановить. Прогресс
+на самом устройстве при этом остаётся — он ваш и лежит локально.</p>
+
+<p>Без установленного приложения — со
+<a href="delete-account.html">страницы удаления аккаунта</a>.</p>
+
+<p>Отдельно: «Сбросить прогресс» в настройках стирает историю повторений и
+расписание, и если вы вошли, то на всех ваших устройствах, а не только на
+этом. Учётная запись при этом сохраняется.</p>
 
 <h2>Разрешения и зачем они</h2>
 
@@ -176,10 +228,13 @@ Google. На части устройств распознавание выпол
 
 <ul>
   <li>Нет аналитики и счётчиков.</li>
-  <li>Нет рекламы.</li>
-  <li>Нет регистрации, аккаунтов и входа.</li>
+  <li>Нет рекламы и рекламных идентификаторов.</li>
+  <li>Нет обязательной регистрации: аккаунт заводится по желанию и только ради
+      второго устройства.</li>
   <li>Нет сторонних библиотек, собирающих данные о пользователе.</li>
   <li>Нет покупок внутри приложения.</li>
+  <li>Нет передачи данных кому-либо, кроме хостинга, на котором лежит ваша же
+      копия.</li>
 </ul>
 
 <h2>Если вы сами выгружаете данные</h2>
@@ -191,8 +246,8 @@ Google. На части устройств распознавание выпол
 
 <h2>Дети</h2>
 
-<p>Приложение не адресовано детям младше 13 лет и не собирает данные ни от
-кого, включая детей.</p>
+<p>Приложение не адресовано детям младше 13 лет. Без аккаунта оно не собирает
+данные ни от кого; заводить аккаунт детям младше 13 лет не следует.</p>
 
 <h2>Изменения</h2>
 
@@ -207,18 +262,22 @@ Google. На части устройств распознавание выпол
 
 <h2>Verbalingo Privacy Policy</h2>
 
-<p class="date">Effective 19 August 2026</p>
+<p class="date">Effective 20 August 2026</p>
 
 <p class="date">The app was previously called Verba. Only the name changed;
 what the program does with your data did not.</p>
 
 <div class="lede">
-  <p><strong>Verbalingo collects no data.</strong> The app does not connect to the
-  internet and transmits nothing anywhere — not to the developer, not to third
-  parties. Everything you do in it stays on your device.</p>
-  <p>This is a property of the build rather than a promise: the app does not
-  hold the <code>INTERNET</code> permission. Without it the operating system
-  will not open a network connection for the app, even if its code tried to.</p>
+  <p><strong>Without an account, Verbalingo collects no data.</strong> The app
+  runs entirely on your device, and you can study without sending anything
+  anywhere. Signing up is not required and unlocks nothing in the study
+  itself: it exists for one purpose, which is continuing the same reviews on
+  another device.</p>
+  <p><strong>If you do sign in</strong>, the app starts carrying your study
+  progress between your own devices through a server. What travels, who stores
+  it and how to delete it are below, and that is the only thing the network is
+  used for. There is no advertising, no analytics and no sale of data in
+  either mode.</p>
 </div>
 
 <h3>What is stored on the device</h3>
@@ -233,8 +292,51 @@ what the program does with your data did not.</p>
   <li>settings: theme, session length, reminder hour.</li>
 </ul>
 
-<p>None of this leaves the device. It is deleted along with the app when the app
-is uninstalled, and when you clear the app's data in Android settings.</p>
+<p>Until you sign in, none of this leaves the device. It is deleted along with
+the app when the app is uninstalled, and when you clear the app's data in
+Android settings.</p>
+
+<h3>The account, and syncing</h3>
+
+<p>Signing in is what puts the same words and the same review schedule on your
+phone and in the browser on your computer. Without it the app is complete: no
+screen, no step and no setting asks you to register.</p>
+
+<p><strong>What is collected.</strong></p>
+<ul>
+  <li><strong>Your email address.</strong> It is the account: there is no
+      password, and a six-digit code is emailed to you instead. The address is
+      used to send that code and to recognise you next time. Nothing is mailed
+      to it otherwise.</li>
+  <li><strong>Your study data</strong> — the same list as above: card state,
+      the review journal, words marked as already known, reports about faulty
+      cards, the placement result and settings. A copy of it goes to the
+      server so that your other sign-in can collect it.</li>
+</ul>
+
+<p>Nothing beyond that: no name, no phone number, no contacts, no location, no
+advertising identifiers.</p>
+
+<p><strong>Where it is stored.</strong> With
+<a href="https://supabase.com/privacy" rel="noopener">Supabase</a>, a database
+host acting as a processor on our instructions. The storage region is
+{{REGION}}. The connection is encrypted (HTTPS) and access is restricted at the
+database row level: a row can be read only by the account it belongs to. The
+code emails go through an email provider, which is given the address and the
+code and nothing else.</p>
+
+<p>The data is kept for as long as the account exists. It is not sold, not
+passed to advertisers, and not used to train models.</p>
+
+<p><strong>How to delete it.</strong> In the app: Настройки → Аккаунт →
+Удалить аккаунт. The account and everything held for it on the server are
+deleted irreversibly. The progress on the device itself stays — it is yours and
+it is local. Without the app installed, use the
+<a href="delete-account.html">account deletion page</a>.</p>
+
+<p>Separately, "Сбросить прогресс" in settings erases the review history and
+schedule — and if you are signed in, it does so on all of your devices rather
+than only this one. The account itself remains.</p>
 
 <h3>Permissions, and what they are for</h3>
 
@@ -265,10 +367,12 @@ It is given only a word or a sentence from the study deck — nothing of yours.<
 
 <ul>
   <li>No analytics.</li>
-  <li>No advertising.</li>
-  <li>No sign-up, accounts, or login.</li>
+  <li>No advertising and no advertising identifiers.</li>
+  <li>No mandatory sign-up: the account is optional and exists only for a
+      second device.</li>
   <li>No third-party libraries that collect data about the user.</li>
   <li>No in-app purchases.</li>
+  <li>No sharing with anyone except the host that keeps your own copy.</li>
 </ul>
 
 <h3>If you export data yourself</h3>
@@ -280,8 +384,8 @@ outside the app's control.</p>
 
 <h3>Children</h3>
 
-<p>The app is not directed at children under 13, and collects no data from
-anyone, children included.</p>
+<p>The app is not directed at children under 13. Without an account it collects
+no data from anyone; children under 13 should not create an account.</p>
 
 <h3>Changes</h3>
 
