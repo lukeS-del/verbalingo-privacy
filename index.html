@@ -105,7 +105,7 @@
   </svg>
   <div>
     <h1>Политика конфиденциальности Verbalingo</h1>
-    <p class="date">Действует с 20 августа 2026 года</p>
+    <p class="date">Действует с 6 ноября 2026 года</p>
     <p class="date">Приложение раньше называлось Verba. Изменилось только имя:
     что программа делает с данными, осталось прежним.</p>
   </div>
@@ -116,14 +116,14 @@
 <div class="lede">
   <p><strong>Без аккаунта Verbalingo не собирает никаких данных.</strong>
   Приложение работает целиком на вашем устройстве, и заниматься можно, ничего
-  никуда не отправляя. Регистрация не требуется и ничего не открывает в
-  занятиях: она нужна ровно для одного — чтобы продолжить те же повторения на
-  другом устройстве.</p>
-  <p><strong>Если вы вошли в аккаунт</strong>, приложение начинает пересылать
-  ваш учебный прогресс между вашими устройствами через сервер. Что именно
-  уезжает, кто его хранит и как всё это удалить — ниже, и это единственное
-  назначение сети в приложении. Ни рекламы, ни аналитики, ни продажи данных
-  нет ни в каком режиме.</p>
+  никуда не отправляя. Регистрация не требуется для
+  карточек и повторений.</p>
+  <p><strong>Если вы вошли в аккаунт</strong>, приложение пересылает ваш
+  учебный прогресс между вашими устройствами через сервер, а в немецкой
+  редакции ещё и открывает проверку предложений ИИ, рейтинг, вопросы
+  разработчикам и подписку Pro. Что при этом уезжает, кому и как всё это
+  удалить — ниже. Ни рекламы, ни аналитики, ни продажи данных нет ни в каком
+  режиме.</p>
 </div>
 
 <h2>Что хранится на устройстве</h2>
@@ -163,8 +163,9 @@
       попадает на сервер, чтобы её мог забрать ваш второй вход.</li>
 </ul>
 
-<p>Ничего сверх этого не собирается: ни имени, ни телефона, ни адресной книги,
-ни местоположения, ни идентификаторов для рекламы.</p>
+<p>Ничего сверх этого и того, что описано в разделах ниже, не собирается: ни
+телефона, ни адресной книги, ни местоположения, ни идентификаторов для
+рекламы.</p>
 
 <h3>Где это хранится</h3>
 
@@ -190,6 +191,44 @@
 <p>Отдельно: «Сбросить прогресс» в настройках стирает историю повторений и
 расписание, и если вы вошли, то на всех ваших устройствах, а не только на
 этом. Учётная запись при этом сохраняется.</p>
+
+<h2>Проверка предложений ИИ</h2>
+
+<p>В упражнениях на перевод и составление предложений ваш ответ может
+проверить языковая модель. На проверку отправляется только сам текст ответа и
+задание (слова или исходное предложение) — без почты и без идентификатора
+аккаунта. Запрос идёт через наш сервер на Supabase к
+<a href="https://www.alibabacloud.com/help/en/legal/latest/alibaba-cloud-international-website-privacy-policy" rel="noopener">Alibaba
+Cloud Model Studio</a> (международный регион, Сингапур), который возвращает
+оценку и исправление. Мы не храним ни ответ, ни результат проверки на
+сервере; на сервере остаётся только счётчик проверок за день, чтобы
+соблюдать лимит тарифа. Не пишите в ответах ничего личного.</p>
+
+<h2>Рейтинг и вопросы разработчикам</h2>
+
+<p>Участие в рейтинге добровольное. Если вы в нём участвуете, другие вошедшие
+пользователи видят имя, которое вы сами выбрали, аватар, страну и город (если
+указали), число выученных слов, серию дней и очки. Почта в рейтинге не
+показывается.</p>
+
+<p>Вопрос разработчикам и подпись к нему видят все вошедшие пользователи,
+вместе с нашим ответом. Не пишите в вопросах ничего личного. Профиль рейтинга
+и вопросы удаляются вместе с аккаунтом (у вопроса удаляется связь с
+аккаунтом).</p>
+
+<h2>Подписка и оплата</h2>
+
+<p>Подписку Pro продаёт и обслуживает
+<a href="https://www.paddle.com/legal/privacy" rel="noopener">Paddle</a> —
+продавец по записи (Merchant of Record). Окно оплаты — это страница Paddle:
+почту, страну, данные карты или PayPal вы вводите ему, и обрабатывает их он по
+своей политике конфиденциальности. Мы данных карты не видим и не храним.</p>
+
+<p>От Paddle мы получаем и храним на Supabase только то, что нужно, чтобы
+открыть вам Pro: статус подписки, тариф, дату окончания оплаченного периода и
+идентификаторы покупателя и подписки в Paddle. Paddle хранит сведения о
+платежах столько, сколько требует налоговое законодательство, — независимо от
+удаления аккаунта в Verbalingo.</p>
 
 <h2>Разрешения и зачем они</h2>
 
@@ -229,12 +268,14 @@ Google. На части устройств распознавание выпол
 <ul>
   <li>Нет аналитики и счётчиков.</li>
   <li>Нет рекламы и рекламных идентификаторов.</li>
-  <li>Нет обязательной регистрации: аккаунт заводится по желанию и только ради
-      второго устройства.</li>
+  <li>Нет обязательной регистрации: карточки и повторения работают без
+      аккаунта.</li>
   <li>Нет сторонних библиотек, собирающих данные о пользователе.</li>
-  <li>Нет покупок внутри приложения.</li>
-  <li>Нет передачи данных кому-либо, кроме хостинга, на котором лежит ваша же
-      копия.</li>
+  <li>Нет покупок внутри Android-приложения: подписка оформляется на сайте
+      через Paddle.</li>
+  <li>Нет передачи данных кому-либо, кроме перечисленных выше: Supabase
+      (хостинг), Alibaba Cloud (текст ответа на проверку) и Paddle
+      (оплата).</li>
 </ul>
 
 <h2>Если вы сами выгружаете данные</h2>
@@ -262,7 +303,7 @@ Google. На части устройств распознавание выпол
 
 <h2>Verbalingo Privacy Policy</h2>
 
-<p class="date">Effective 20 August 2026</p>
+<p class="date">Effective 6 November 2026</p>
 
 <p class="date">The app was previously called Verba. Only the name changed;
 what the program does with your data did not.</p>
@@ -270,14 +311,14 @@ what the program does with your data did not.</p>
 <div class="lede">
   <p><strong>Without an account, Verbalingo collects no data.</strong> The app
   runs entirely on your device, and you can study without sending anything
-  anywhere. Signing up is not required and unlocks nothing in the study
-  itself: it exists for one purpose, which is continuing the same reviews on
-  another device.</p>
-  <p><strong>If you do sign in</strong>, the app starts carrying your study
-  progress between your own devices through a server. What travels, who stores
-  it and how to delete it are below, and that is the only thing the network is
-  used for. There is no advertising, no analytics and no sale of data in
-  either mode.</p>
+  anywhere. Signing up is not required for flashcards and
+  reviews.</p>
+  <p><strong>If you do sign in</strong>, the app carries your study
+  progress between your own devices through a server, and in the German
+  edition it also opens AI sentence checks, the leaderboard, questions to the
+  developers and the Pro subscription. What travels, to whom, and how to
+  delete it are below. There is no advertising, no analytics and no sale of
+  data in either mode.</p>
 </div>
 
 <h3>What is stored on the device</h3>
@@ -314,8 +355,8 @@ screen, no step and no setting asks you to register.</p>
       server so that your other sign-in can collect it.</li>
 </ul>
 
-<p>Nothing beyond that: no name, no phone number, no contacts, no location, no
-advertising identifiers.</p>
+<p>Nothing beyond that and what the sections below describe: no phone number,
+no contacts, no location, no advertising identifiers.</p>
 
 <p><strong>Where it is stored.</strong> With
 <a href="https://supabase.com/privacy" rel="noopener">Supabase</a>, a database
@@ -337,6 +378,44 @@ it is local. Without the app installed, use the
 <p>Separately, "Сбросить прогресс" in settings erases the review history and
 schedule — and if you are signed in, it does so on all of your devices rather
 than only this one. The account itself remains.</p>
+
+<h3>AI sentence checks</h3>
+
+<p>In the translation and sentence-writing exercises your answer may be checked
+by a language model. Only the answer text and the task (the words or the
+source sentence) are sent — not your email and not your account identifier.
+The request goes through our server on Supabase to
+<a href="https://www.alibabacloud.com/help/en/legal/latest/alibaba-cloud-international-website-privacy-policy" rel="noopener">Alibaba
+Cloud Model Studio</a> (international region, Singapore), which returns a grade
+and a correction. We do not store the answer or the result on the server;
+only a daily count of checks is kept, to apply your plan's limit. Do not put
+anything personal in your answers.</p>
+
+<h3>The leaderboard and questions to the developers</h3>
+
+<p>Taking part in the leaderboard is optional. If you take part, other
+signed-in users see the name you chose, your avatar, country and city (if you
+gave them), the number of words learned, your streak and your points. Your
+email is never shown.</p>
+
+<p>A question to the developers and the name under it are visible to all
+signed-in users, together with our answer. Do not put anything personal in a
+question. The leaderboard profile and questions are deleted with the account
+(a question loses its link to the account).</p>
+
+<h3>Subscription and payment</h3>
+
+<p>The Pro subscription is sold and serviced by
+<a href="https://www.paddle.com/legal/privacy" rel="noopener">Paddle</a>, the
+Merchant of Record. The checkout is Paddle's page: you give your email,
+country and card or PayPal details to Paddle, and Paddle processes them under
+its own privacy policy. We never see or store card details.</p>
+
+<p>From Paddle we receive and store on Supabase only what is needed to give you
+Pro: the subscription status, the plan, the end of the paid period, and
+Paddle's customer and subscription identifiers. Paddle keeps payment records
+for as long as tax law requires, regardless of deleting your Verbalingo
+account.</p>
 
 <h3>Permissions, and what they are for</h3>
 
@@ -368,11 +447,13 @@ It is given only a word or a sentence from the study deck — nothing of yours.<
 <ul>
   <li>No analytics.</li>
   <li>No advertising and no advertising identifiers.</li>
-  <li>No mandatory sign-up: the account is optional and exists only for a
-      second device.</li>
+  <li>No mandatory sign-up: flashcards and reviews work without an
+      account.</li>
   <li>No third-party libraries that collect data about the user.</li>
-  <li>No in-app purchases.</li>
-  <li>No sharing with anyone except the host that keeps your own copy.</li>
+  <li>No purchases inside the Android app: the subscription is bought on the
+      website through Paddle.</li>
+  <li>No sharing with anyone except those named above: Supabase (hosting),
+      Alibaba Cloud (answer text for checking) and Paddle (payment).</li>
 </ul>
 
 <h3>If you export data yourself</h3>
@@ -400,7 +481,10 @@ will be described in the text rather than hidden behind a general clause.</p>
 </section>
 
 <footer>
-  <p>Verbalingo — тренажёр английского для русскоязычных.<br>
+  <p><a href="pricing.html">Тарифы / Pricing</a> ·
+  <a href="terms.html">Условия / Terms</a> ·
+  <a href="refund.html">Возвраты / Refunds</a></p>
+  <p>Verbalingo — тренажёры английского и немецкого для русскоязычных.<br>
   История изменений этого документа —
   <a href="https://github.com/lukeS-del/verbalingo-privacy/commits/main/index.html">в репозитории</a>.</p>
 </footer>
